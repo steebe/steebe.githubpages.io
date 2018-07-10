@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 # Runtime for bundle
 gem "jekyll", "~> 3.6.2"
-# gem "github-pages", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
 
 # Theme
 gem "minima", "~> 2.0"
