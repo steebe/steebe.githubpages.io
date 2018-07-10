@@ -20,6 +20,9 @@ In figure 1-1, the following phenomena is displayed:
     B.) The companies within this entity pay the healthcare costs of their
     covered individuals that require services.
 
+Figure 1-1
+![1-1]({{ "/assets/p1chb7aa2ned1027eqcar13hs4.png" | absolute_url }})
+
 At a _very_ high level, the private healthcare system is a black box whose input
 is cash and whose output is far less cash. It's a highly profitable entity whose
 revenue is directly attributed to the statistics that only a minute few of the
