@@ -10,7 +10,8 @@ categories: jekyll update
 ## Short-circuit Evaluation
 In any line that evaluates multiple conditions, JS does its best to short-
 circuit what needs to be evaluated.
-```JavaScript
+
+{% highlight JavaScript %}
 // LHS is evaluated and returned (RHS ignored)
 console.log("me" || "you");
 
@@ -19,7 +20,7 @@ console.log("you" || "me");
 
 // 1st condition evaluated as false yields third condition evaluation & return
 console.log(0 ? ("me || me") : ("you" && "you"))
-```
+{% endhighlight %}
 
 ## Automatic Type Conversion (Via Type Coercion)
 JS does its best to allow any types to be compared and returned. Its interpreter
