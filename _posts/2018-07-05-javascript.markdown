@@ -12,13 +12,11 @@ In any line that evaluates multiple conditions, JS does its best to short-
 circuit what needs to be evaluated.
 
 {% highlight JavaScript %}
-// LHS is evaluated and returned (RHS ignored)
+// LHS is evaluated and returned as true (RHS ignored)
 console.log("me" || "you");
 
-// LHS is evaluated as true BEFORE RHS is evaluated and returned
-console.log("you" || "me");
-
 // 1st condition evaluated as false yields third condition evaluation & return
+// (returns true due to two true expressions "you" and "you")
 console.log(0 ? ("me || me") : ("you" && "you"))
 {% endhighlight %}
 
@@ -36,3 +34,9 @@ console.log("five" * 2);// cannot perform conversion on "five", returns NaN
 Note that the type coercion being performed is heavily dependent on the
 _operation_; The values being evaluated and converted are secondary in
 comparison.
+
+## Variables & Data Binding
+There are three keywords that represent assigning a value to a variable:
+1. _let_ -
+2. _var_
+3. _const_ - when used in assignment, behaves like _final_ in Java
