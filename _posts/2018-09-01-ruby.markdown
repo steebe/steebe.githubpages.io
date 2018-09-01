@@ -34,3 +34,9 @@ numbers   # => [3, 5, 1, 4, 66, 2]
 numbers.sort!
 numbers   # => [1, 2, 3, 4, 5, 66]
 {% endhighlight %}
+
+
+### Helpful sources
+[Official Ruby Documentation](https://www.ruby-lang.org/en/documentation/)
+[TryRuby](https://ruby.github.io/TryRuby/)
+[FAQ](https://www.ruby-lang.org/en/documentation/faq/1/)
