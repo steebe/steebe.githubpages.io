@@ -17,13 +17,15 @@ Functions (inherently "methods" due to being defined within a class body) can be
 called from any object in Ruby, but only certain methods work on certain objects.
 
 ### Out of the Box Functions
-* <String>_.reverse_ - reverses a string. Does not work on numbers!
 * <String>_.length_ - prints the length of a string. Does not work on numbers!
+* <String>_.gsub(arg1, arg2)_ - "global substitute" replaces all instances of arg1 in the String with arg2.
+* <String>_.lines_ - converts a string to an array of its contents. Each item represents a block of characters that are followed by a newline.
+* <String/Array>_.reverse_ - reverses the attributes of an object. Does not work on numbers
+* <Array>_.max_ - prints the greatest item of an array of numbers.
+* <Array>_.sort_ - sorts the contents of an array of numbers.
 * _.to_s_ - attempts to convert a non-string to a string.
 * _.to_i_ - attempts to convert something to an integer.
 * _.to_a_ - attempts to convert something to an array.
-* <Array>_.max_ - prints the greatest item of an array of numbers.
-* <Array>_.sort_ - sorts the contents of an array of numbers.
 
 ### Bang! (!)
 {% highlight ruby %}
@@ -34,6 +36,9 @@ numbers   # => [3, 5, 1, 4, 66, 2]
 numbers.sort!
 numbers   # => [1, 2, 3, 4, 5, 66]
 {% endhighlight %}
+
+### Method Chaining
+When an statement is comprised of 
 
 
 ### Helpful sources
