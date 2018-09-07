@@ -8,24 +8,82 @@ categories: jekyll update
 # Notes
 
 ## Data Types
-* Numbers (40, 1.3, 6969696...)
-* Strings ("Steve", "is", "dumb"...)
-* Arrays (index access available => arr[0] returns the first item of arr)
+* Numbers - You know, the ususal. (40, 1.3, 6969696...)
+{% highlight ruby %}
+x = 3
+y = 2.9
+{% endhighlight %}
+* Strings - Again, do we need to go over this? ("Steve", "is", "dumb"...)
+{% highlight ruby %}
+name = "steebe"
+{% endhighlight %}
+* Arrays - A list of items whose initial value is denoted with brackets ([]) (index access similar to Python => arr[0] returns the first item of arr)
+{% highlight ruby %}
+arr = [1, 2, 3]
+{% endhighlight %}
+* Hashes - A map; a list of key value pairs (similar to Python dict)
+{% highlight ruby %}
+h = {"key" => "value", "name" => "steebe"}
+{% endhighlight %}
+* Symbols - A static constant of sorts. The syntax of a symbol in code is _:<symbol-name>_ (:symbolA, :mysymbol, :etc). The symbol can be reused over and over, and memory is only allocated once for its representation. Its underlying representation, by the way, is a string when it is consumed.
+{% highlight ruby %}
+:mySym
+puts :mySym # => mySym
+{% endhighlight %}
+
+## Blocks
+In Ruby, any code contained within curly braces ({}) is considered a block. Blocks are special, because they are often invoked by a function. The invoker is responsible for sending any values to the block in the form of a variable. For example:
+
+{% highlight ruby %}
+5.times { |time|    # start of block; value assigned to time by times
+    puts time       # prints 0 -> 5
+}
+{% endhighlight %}
+
+Note that the variable is passed into the block in a parameter list encapsulated in pipes. Any multi-parameter implementation is comma separated.
 
 ## Functions
-Functions (inherently "methods" due to being defined within a class body) can be
-called from any object in Ruby, but only certain methods work on certain objects.
+Functions (inherently "methods" due to being defined within a class body) can be called from any object in Ruby, but only certain methods work on certain objects.
+Functions can require parameters, and upon invocation _optional_ parameters denoting the argument list.
+
+{% highlight ruby %}
+x = "Hello!"
+y = x.gsub("lo", "p")
+z = x.gsub "lo", "p"
+puts y      # => Help!
+puts (z)    # => Help!
+{% endhighlight %}
+
 
 ### Out of the Box Functions
+* _.puts_ - "Put String" prints its argument to the screen followed by a newline.
+* _.print_ - Prints its argument to the screen.
+* <Number>_.times_ - iterates for a cycle whose count is **n**, the number being invoked on. If followed by a block, will execute that block **n** times.
 * <String>_.length_ - prints the length of a string. Does not work on numbers!
 * <String>_.gsub(arg1, arg2)_ - "global substitute" replaces all instances of arg1 in the String with arg2.
 * <String>_.lines_ - converts a string to an array of its contents. Each item represents a block of characters that are followed by a newline.
 * <String/Array>_.reverse_ - reverses the attributes of an object. Does not work on numbers
 * <Array>_.max_ - prints the greatest item of an array of numbers.
 * <Array>_.sort_ - sorts the contents of an array of numbers.
+* <Array>_.join(delimeter)_ - joins the contents of an array with the delimeter as the separators between each item.
+* <Array/Hash>_.each_ - returns the contents of an array or the key/value pairs of a hash.
+* <Array/Hash>_.select_ - returns the contents of an array or hash filtered by a block.
+* <Array/Hash>_.count_ - returns the amount of elements in an array or hash.
+* <Hash>_.keys_ - prints the keyset of a Hash as an array.
 * _.to_s_ - attempts to convert a non-string to a string.
 * _.to_i_ - attempts to convert something to an integer.
 * _.to_a_ - attempts to convert something to an array.
+
+### Definitions
+As with any robust high level language, Ruby allows for the developer to create their own methods. To create a method in Ruby, the _def_ and _end_ keywords are required to form a block.
+{% highlight ruby %}
+def myMethod (arg1)
+    # method body
+end
+{% endhighlight %}
+
+### Returns
+A custom method does not include its return type in its stub. Instead, it just returns what it must when it must. The return statement can include the _return_ keyword, or it can simply be the value that is being returned. In other words, the _return_ keyword is optional.
 
 ### Bang! (!)
 {% highlight ruby %}
@@ -38,7 +96,7 @@ numbers   # => [1, 2, 3, 4, 5, 66]
 {% endhighlight %}
 
 ### Method Chaining
-When an statement is comprised of 
+When an statement is comprised of
 
 
 ### Helpful sources
