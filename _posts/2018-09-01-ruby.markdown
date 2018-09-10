@@ -17,6 +17,20 @@ y = 2.9
 {% highlight ruby %}
 name = "steebe"
 {% endhighlight %}
+* Booleans
+{% highlight ruby %}
+5 < 10          # => true
+5     <= 10     # => true
+'abc' == 'def'  # => false
+true            # => true
+123456          # => true
+0               # => true
+nil             # => false
+'xyz'.empty?    # => false
+'a' > 5         # => error:
+                # comparison of String with
+                # Numeric failed
+{% endhighlight %}
 * Arrays - A list of items whose initial value is denoted with brackets ([]) (index access similar to Python => arr[0] returns the first item of arr)
 {% highlight ruby %}
 arr = [1, 2, 3]
@@ -42,6 +56,18 @@ In Ruby, any code contained within curly braces ({}) is considered a block. Bloc
 
 Note that the variable is passed into the block in a parameter list encapsulated in pipes. Any multi-parameter implementation is comma separated.
 
+## String Formatting
+In the context of processing strings or printing to them to the console, Ruby offers a convention that helps with formatting and dealing with expressions as strings.
+
+Within double quotes, the hash sign followed by a pair of curly braces denotes accessing a value. The contents within the curly braces must be a variable or expression that represents a string.
+
+{% highlight ruby %}
+player = {"name" => "steebe", "age" => "24", "game" => "GOW"}
+player.each { |k, v|
+    puts "#{k}, #{v}" # => name, steebe \n, etc.
+}
+{% endhighlight %}
+
 ## Functions
 Functions (inherently "methods" due to being defined within a class body) can be called from any object in Ruby, but only certain methods work on certain objects.
 Functions can require parameters, and upon invocation _optional_ parameters denoting the argument list.
@@ -62,6 +88,7 @@ puts (z)    # => Help!
 * <String>_.length_ - prints the length of a string. Does not work on numbers!
 * <String>_.gsub(arg1, arg2)_ - "global substitute" replaces all instances of arg1 in the String with arg2.
 * <String>_.lines_ - converts a string to an array of its contents. Each item represents a block of characters that are followed by a newline.
+* <String>_.ljust(<int>)_ - when called on a string, justifies the string to the left side of the buffer with its argument specifying the amount of padding.
 * <String/Array>_.reverse_ - reverses the attributes of an object. Does not work on numbers
 * <Array>_.max_ - prints the greatest item of an array of numbers.
 * <Array>_.sort_ - sorts the contents of an array of numbers.
@@ -99,7 +126,8 @@ numbers   # => [1, 2, 3, 4, 5, 66]
 When an statement is comprised of
 
 
-### Helpful sources
+## Helpful sources
 [Official Ruby Documentation](https://www.ruby-lang.org/en/documentation/)
 [TryRuby](https://ruby.github.io/TryRuby/)
+[Ruby API Docs](http://ruby-doc.org/core-2.5.1/doc/)
 [FAQ](https://www.ruby-lang.org/en/documentation/faq/1/)
