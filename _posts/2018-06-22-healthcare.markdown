@@ -40,7 +40,7 @@ From the surface, it seems that the primary beneficiaries (yes, pun intended) of
     - Via plans to obtain bigger tax breaks [through lobbying](https://www.followthemoney.org/research/institute-reports/health-insurance-companies-give-healthy-donations-to-political-campaigns)
     - Via "minimizing operational costs," which is fancy marketing speak for automating as much of their lower clerical workforce as possible
     - Via [subsidies](https://www.bloomberg.com/news/articles/2018-05-23/it-costs-685-billion-a-year-to-subsidize-u-s-health-insurance) and [toxic marketing schemes](https://www.ama.org/publications/eNewsletters/MHSNewsletter/Pages/secrets-next-generation-health-insurance-brand-marketing-directly-consumers.aspx) against any attempt to centralize healthcare
-- Politicians that are catered to by lobbyers of the healthcare entity
+- Politicians that are catered to by lobbyists of the healthcare entity
     - Mmmm, [recent corruption](https://psmag.com/news/health-insurance-senate-money-connections)
 
 ## Whom does it hurt?
