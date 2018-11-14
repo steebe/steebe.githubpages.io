@@ -37,6 +37,6 @@ comparison.
 
 ## Variables & Data Binding
 There are three keywords that represent assigning a value to a variable:
-1. _let_ -
-2. _var_
-3. _const_ - when used in assignment, behaves like _final_ in Java
+1. _var_ - allows for defining a global variable. When _var_ is used in the context of a local block, the associated variable can be accessed outside said block.
+2. _let_ - introduced in ES2015. Allows for defining a local variable whose scope is exactly the block it belongs to.
+3. _const_ - when used in assignment, behaves like _final_ in Java. The associated variables behave just like variables defined with _let_, only they cannot be modified at all in the future.

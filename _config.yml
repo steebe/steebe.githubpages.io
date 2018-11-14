@@ -1,8 +1,8 @@
 # Site settings
-title: Steve Bass
+title: steebe
 email: steve@stevebass.me
 description: >- # this means to ignore newlines until "baseurl:"
-  A site for the people. To learn about Steve and the stuff he's learned.
+  A site for the people, to learn about Steve and the stuff he's learned.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: SteveBass
@@ -22,6 +22,7 @@ timezone: America/New_York
 # to override the default setting.
 exclude:
     - _posts/2018-06-30-welcome-to-jekyll.markdown
+    - _posts/2018-11-13-apple.markdown
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules

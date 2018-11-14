@@ -3,7 +3,7 @@
 On MacOS, there exist a few darwin executables that come in handy in regards to
 making external disks bootable.
 
-1. Download an image you want to install to another local machine!
+1. Download an image you want to install to another local machine
 2. Follow these steps within your favorite MacOS terminal application:
 {% highlight bash %}
 $ hdiutil convert -format UDRW -o /path/to/target.img /path/to/source.iso

@@ -122,12 +122,8 @@ numbers.sort!
 numbers   # => [1, 2, 3, 4, 5, 66]
 {% endhighlight %}
 
-### Method Chaining
-When an statement is comprised of
-
-
 ## Helpful sources
-[Official Ruby Documentation](https://www.ruby-lang.org/en/documentation/)
-[TryRuby](https://ruby.github.io/TryRuby/)
-[Ruby API Docs](http://ruby-doc.org/core-2.5.1/doc/)
-[FAQ](https://www.ruby-lang.org/en/documentation/faq/1/)
+- [Official Ruby Documentation](https://www.ruby-lang.org/en/documentation/)
+- [TryRuby](https://ruby.github.io/TryRuby/)
+- [Ruby API Docs](http://ruby-doc.org/core-2.5.1/doc/)
+- [FAQ](https://www.ruby-lang.org/en/documentation/faq/1/)
