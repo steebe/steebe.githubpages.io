@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 # How Privatized Healthcare is Just Universal Healthcare That's Ripping You Off
 
-The following post essentially represents a series of observations that have manifested themselves within my deep psyche regarding the current healthcare system in the United States. I don't pretend to be a medical professional, but then again it doesn't take one to note the ins and outs of an economic powerhouse from the outside. This post is not comprehensive, nor should it be seen as an attempt at a hint at policy building of any kind; I don't pretend to be a politician either.
+The following post essentially represents a series of observations regarding the current healthcare system in the United States that have manifested themselves within my deep psyche. I don't pretend to be a medical professional, but then again it doesn't take one to note the ins and outs of an economic powerhouse from the outside. This post is not comprehensive, nor should it be seen as an attempt at a hint at policy building of any kind; I don't pretend to be a politician either.
 
 ## How it works
 
