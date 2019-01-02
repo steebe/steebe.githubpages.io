@@ -23,6 +23,7 @@ timezone: America/New_York
 exclude:
     - _posts/2018-06-30-welcome-to-jekyll.markdown
     - _posts/2018-11-13-apple.markdown
+    - _posts/2019-01-01-books.markdown
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
