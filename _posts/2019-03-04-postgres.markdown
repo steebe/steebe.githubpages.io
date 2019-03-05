@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "PostgreSQL Mentionables"
+date:   2018-03-04 22:56:00 -0400
+categories: editorial
+---
+
+# Notes!
+
+## Once PostgreSQL is installed on a machine...
+
+{% highlight bash %}
+# Create a user that can start interacting with the DB other than postgres
+{~} % sudo su postgres -c 'createuser -P --superuser bassman'
+# With that user, create a DB
+{~} % createdb --username=bassman --password loc
+{% endhighlight %}
