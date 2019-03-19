@@ -16,3 +16,10 @@ categories: editorial
 {~} % createdb --username=bassman --password loc
 
 {% endhighlight %}
+
+## Remove PostgreSQL from Mac
+{% highlight bash %}
+$ open /Library/PostgreSQL/<ver>/uninstall-postgresql.app
+$ sudo rm /etc/postgres-reg.ini
+$ sudo rm -rf /Library/PostgreSQL
+{% endhighlight %}
