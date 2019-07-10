@@ -56,4 +56,5 @@ Here lies an email sent to a buddy of mine with the perfect recipe for climbers 
 > 6. Cook for 3-4 minutes
 > 7. Reduce heat to low and stir in baby spinach
 > 8. Remove from heat, and enjoy
+>
 > Corollary: enjoy this meal “Honnold-style” by simply eating it out of the pan you’ve cooked with and whatever utensil you’ve used for stirring
