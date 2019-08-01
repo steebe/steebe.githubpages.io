@@ -35,3 +35,16 @@ _zero values_ - any variable that's not defined in its declaration takes what's 
 
 _:=_ - the "short variable declaration" is the operator used in a statement to declare one or more variables and give them appropriate types based on the initializer value
 {% highlight Go %}x := 2 // initializes x to 2{% endhighlight %}
+
+## Updating Go
+{% highlight bash %}
+$ sudo rm -rf /usr/local/go
+# Download latest tar from distribution (https://golang.org/dl/)
+$ sudo tar -C /usr/local -xzf <path-to-tarball>
+# Edit GOROOT, GOPATH and PATH
+$ echo $PATH | grep "/usr/local/go/bin"
+{% endhighlight %}
+
+
+### Sources
+1. [Nikhita](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
